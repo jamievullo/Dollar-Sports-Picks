@@ -1,12 +1,12 @@
-<h1>"Hello World"</h1>
+=  stripe_javascript_tag
 
-<div>
-  <h1>List of products</h1>
-  <%= form_tag({:controller => "orders", :action => "submit" }, {:id => 'order-details'}) do %>
-    <input id="order-type" name="orders[payment_gateway]" type="hidden" value="stripe"></input>
-    <div class="form_row"></div>
-  <% end %>
-</div>
+<h1>List of products</h1>
+    <div>
+        <%= form_tag({:controller => "orders", :action => "submit" }, {:id => 'order-details'}) do %>
+        <input id="order-type" name="orders[payment_gateway]" type="hidden" value="stripe"></input>
+        <div class="form_row"></div>
+        <% end %>
+    </div>
 
 <h4>Charges/Payments</h4>
   <% @products_purchase.each do |product| %>
